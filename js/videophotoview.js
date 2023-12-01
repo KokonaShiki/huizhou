@@ -16,8 +16,14 @@ function closeVideoPopup() {
 
 $(document).ready(function() {
     $('.video-thumbnail').on('click', function() {
-        var videoSrc = 'http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4'; // 更换为你的视频路径
+        // var videoSrc = 'http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4'; // 更换为你的视频路径
         $('#video-player').attr('src', videoSrc); // 设置视频播放器的源
+
+        $('#video-popup').fadeIn(function() {
+            // 显示视频播放器弹出窗口后自动播放视频
+            var video = document.getElementById('video-player');
+            video.play();
+        });
 
         $('#video-popup').fadeIn(); // 显示视频播放器弹出窗口
     });
