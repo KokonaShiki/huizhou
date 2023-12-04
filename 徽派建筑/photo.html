@@ -130,28 +130,25 @@
         <div id="outermain">
         	<div id="maincontent">
         	<section id="mainthecontent">
-            	<h1 class="pagetitle">美景推荐</h1>
-            	<div id="breadcrumb">You are here:<a href="index.html">首页</a>  /旅游</div>
+            	<h1 class="pagetitle">图片展示</h1>
+            	<div id="breadcrumb">You are here:<a href="index.html">首页</a>  /图片</div>
                 
 				<ul class="ts-gallery-col3">
                     <li>
                         <div class="gallery">
-                            <!-- 点击图片触发视频播放 -->
-                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
+                            <!-- 点击图片触发弹出窗口 -->
+                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Video Thumbnail" class="image-thumbnail" onclick="openImagePopup()">
                         </div>
 
-                        <!-- 视频播放器弹出窗口 -->
-                        <div class="video-popup" id="video-popup">
-                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
-                            <video controls autoplay id="video-player">
-                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                        <!-- 图片弹出窗口 -->
+                        <div class="image-popup" id="image-popup">
+                            <span class="close-btn" onclick="closeImagePopup()">&#10006;</span>
+                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Local Image">
                         </div>
-
                         <div class="ts-gallery-text ">
-                            <h2>孔子庙</h2>
-                            <p>孔子庙，即孔庙，又称作文庙，是纪念中国伟大思想家、教育家孔子的祠庙建筑，在中国各地都在历代王朝更有，在历代王朝更迭中又被称作文庙、夫子庙、至圣庙、先师庙、先圣庙、文宣王庙，尤以文庙之名更为普遍。其中南京夫子庙、曲阜孔庙、北京孔庙和吉林文庙并称为中国四大文庙.</p>
+                            <h2>黄河</h2>
+                            <p>黄河，中国北部大河，全长约5464公里，流域面积约752443平方公里。世界第五大长河，中国第二长河。
+黄河发源于青海省青藏高原的巴颜喀拉山脉北麓约古宗列盆地的玛曲，呈“几”字形。自西向东分别流经青海、四川、甘肃、宁夏、内蒙古、陕西、山西、河南及山东9个省（自治区），最后流入渤海。.</p>
                             <a href="accommodation-details.html" class="button">Read More</a>
                         </div>
                         <div class="ts-gallery-clear"></div>
@@ -176,14 +173,20 @@
                         <div class="ts-gallery-clear"></div>
                     </li>
                     <li class="nomargin">
-                        <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/img3.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/img3.jpg" /></a>
+                        <div class="gallery">
+                            <!-- 点击图片触发弹出窗口 -->
+                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Video Thumbnail" class="image-thumbnail" onclick="openImagePopup()">
+                        </div>
+
+                        <!-- 图片弹出窗口 -->
+                        <div class="image-popup" id="image-popup">
+                            <span class="close-btn" onclick="closeImagePopup()">&#10006;</span>
+                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Local Image">
                         </div>
                         <div class="ts-gallery-text ">
-                            <h2>故宫</h2>
-                            <p>北京故宫，旧称为紫禁城，位于北京中轴线的中心，是中国明、清两代24位皇帝的皇家宫殿，是中国古代宫廷建筑之精华，无与伦比的建筑杰作，也是世界上现存规模最大、保存最为完整的木质结构的古建筑之一。它有大小宫殿七十多座，房屋九千余间，以太和、中和、保和三大殿为中心。.</p>
+                            <h2>黄河</h2>
+                            <p>黄河，中国北部大河，全长约5464公里，流域面积约752443平方公里。世界第五大长河，中国第二长河。
+黄河发源于青海省青藏高原的巴颜喀拉山脉北麓约古宗列盆地的玛曲，呈“几”字形。自西向东分别流经青海、四川、甘肃、宁夏、内蒙古、陕西、山西、河南及山东9个省（自治区），最后流入渤海。.</p>
                             <a href="accommodation-details.html" class="button">Read More</a>
                         </div>
                         <div class="ts-gallery-clear"></div>
@@ -193,13 +196,18 @@
                 
 				<ul class="ts-gallery-col3">
                     <li>
-                        <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/img3.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/img3.jpg" /></a>
+                        <div class="gallery">
+                            <!-- 点击图片触发弹出窗口 -->
+                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Video Thumbnail" class="image-thumbnail" onclick="openImagePopup()">
+                        </div>
+
+                        <!-- 图片弹出窗口 -->
+                        <div class="image-popup" id="image-popup">
+                            <span class="close-btn" onclick="closeImagePopup()">&#10006;</span>
+                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Local Image">
                         </div>
                         <div class="ts-gallery-text ">
-                            <<h2>黄河</h2>
+                            <h2>黄河</h2>
                             <p>黄河，中国北部大河，全长约5464公里，流域面积约752443平方公里。世界第五大长河，中国第二长河。
 黄河发源于青海省青藏高原的巴颜喀拉山脉北麓约古宗列盆地的玛曲，呈“几”字形。自西向东分别流经青海、四川、甘肃、宁夏、内蒙古、陕西、山西、河南及山东9个省（自治区），最后流入渤海。.</p>
                             <a href="accommodation-details.html" class="button">Read More</a>
@@ -207,10 +215,15 @@
                         <div class="ts-gallery-clear"></div>
                     </li>
                     <li>
-                        <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/img2.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/img2.jpg" /></a>
+                        <div class="gallery">
+                            <!-- 点击图片触发弹出窗口 -->
+                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Video Thumbnail" class="image-thumbnail" onclick="openImagePopup()">
+                        </div>
+
+                        <!-- 图片弹出窗口 -->
+                        <div class="image-popup" id="image-popup">
+                            <span class="close-btn" onclick="closeImagePopup()">&#10006;</span>
+                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Local Image">
                         </div>
                         <div class="ts-gallery-text ">
                             <h2>黄河</h2>
@@ -221,10 +234,15 @@
                         <div class="ts-gallery-clear"></div>
                     </li>
                     <li class="nomargin">
-                        <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/img1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/img1.jpg" /></a>
+                        <div class="gallery">
+                            <!-- 点击图片触发弹出窗口 -->
+                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Video Thumbnail" class="image-thumbnail" onclick="openImagePopup()">
+                        </div>
+
+                        <!-- 图片弹出窗口 -->
+                        <div class="image-popup" id="image-popup">
+                            <span class="close-btn" onclick="closeImagePopup()">&#10006;</span>
+                            <img src="https://kokonashiki.github.io/HuiZhou-Culture/img1/img2.jpg" alt="Local Image">
                         </div>
                         <div class="ts-gallery-text ">
                             <h2>黄河</h2>

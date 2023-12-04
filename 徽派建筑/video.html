@@ -21,7 +21,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>Downloaded from KickassGFX.net</title>
+	<title>徽州文化</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/inner.css" />
     <link rel="stylesheet" href="../styles/prettyPhoto.css" media="screen" />
+    <script src="../js/jquery.min.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css' />
 	<!--[if lt IE 9]>
@@ -70,7 +71,7 @@
                                     <li><a href="../徽州宗族/video.html">视频</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../新安理学/about.html">新安理学</a>
+                            <li><a href="../新安理学/about.html"class="current">新安理学</a>
                                 <ul>
                                 	<li><a href="../新安理学/about.html">详情</a></li>
                                     <li><a href="../新安理学/photo.html">图片</a></li>
@@ -98,7 +99,7 @@
                                     <li><a href="../文房四宝/video.html">视频</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../徽派建筑/about.html"class="current">徽派建筑</a>
+                            <li><a href="../徽派建筑/about.html">徽派建筑</a>
                                 <ul>
                                 	<li><a href="../徽派建筑/about.html">详情</a></li>
                                     <li><a href="../徽派建筑/photo.html">图片</a></li>
@@ -127,212 +128,329 @@
         <div id="outermain">
         	<div id="maincontent">
         	<section id="mainthecontent">
-            	<h1 class="pagetitle">工艺品展示</h1><div id="breadcrumb">You are here: <a href="index.html">首页</a>  /  工艺</div>
+            	<h1 class="pagetitle">视频展示</h1><div id="breadcrumb">You are here: <a href="index.html">首页</a>  /  视频</div>
                 <ul class="ts-gallery-col4">
                     <li>
                         <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li>
                         <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g2.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g2.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>纺线车</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li>
                         <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g3.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g3.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>胭脂盒</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li class="nomargin">
                         <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g4.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g4.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
+                        </div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                             <div class="ts-gallery-text ">
-                            	<h2>古茶具</h2>
+                            <h2>雀羽伞</h2>
                             </div>
                             <div class="ts-gallery-clear"></div>
                     </li>
                     <li class="ts-gallery-clear"></li>
-                </ul>
-                
+                </ul> 
                 <ul class="ts-gallery-col4">
                     <li>
                         <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g5.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g5.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>古木琴</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
-                    </li>
-                     <li>
-                        <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li>
                         <div class="ts-gallery-img">
-                           <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
+                    </li>
+                    <li>
+                        <div class="ts-gallery-img">
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
+                        </div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li class="nomargin">
                         <div class="ts-gallery-img">
-                             <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
+                        </div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                             <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
+                            <h2>雀羽伞</h2>
                             </div>
                             <div class="ts-gallery-clear"></div>
                     </li>
                     <li class="ts-gallery-clear"></li>
-                </ul>
-                
+                </ul> 
                 <ul class="ts-gallery-col4">
                     <li>
                         <div class="ts-gallery-img">
-                           <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li>
                         <div class="ts-gallery-img">
-                          <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li>
                         <div class="ts-gallery-img">
-                           <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li class="nomargin">
                         <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
+                        </div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                             <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
+                            <h2>雀羽伞</h2>
                             </div>
                             <div class="ts-gallery-clear"></div>
                     </li>
                     <li class="ts-gallery-clear"></li>
-                </ul>
-                
+                </ul> 
                 <ul class="ts-gallery-col4">
                     <li>
                         <div class="ts-gallery-img">
-                          <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li>
                         <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li>
                         <div class="ts-gallery-img">
-                           <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g1.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g1.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
                         </div>
-                            <div class="ts-gallery-text ">
-                            	<h2>雀羽伞</h2>
-                            </div>
-                            <div class="ts-gallery-clear"></div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="ts-gallery-text ">
+                            <h2>雀羽伞</h2>
+                        </div>
+                        <div class="ts-gallery-clear"></div>
                     </li>
                     <li class="nomargin">
                         <div class="ts-gallery-img">
-                            <a title="" data-rel="prettyPhoto[mixed]" href="images/content/gallery/g4.jpg" class="image">
-                            <span class="rollover"></span>
-                            <img class="scale-with-grid" alt="" src="images/content/gallery/g4.jpg" /></a>
+                            <!-- 点击图片触发视频播放 -->
+                            <img src="../images/content/gallery/g1.jpg" alt="Video Thumbnail" class="video-thumbnail" onclick="openVideoPopup()">
+                        </div>
+
+                        <!-- 视频播放器弹出窗口 -->
+                        <div class="video-popup" id="video-popup">
+                            <span class="close-btn" onclick="closeVideoPopup()">&#10006;</span>
+                            <video controls autoplay id="video-player">
+                                <source src="http://localhost:8080/assets/HUIZHOUvideo/徽商/中国商人之无梦徽州_标清.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                             <div class="ts-gallery-text ">
-                            	<h2>Curabitur tincidunt</h2>
+                            <h2>雀羽伞</h2>
                             </div>
                             <div class="ts-gallery-clear"></div>
                     </li>
                     <li class="ts-gallery-clear"></li>
-                </ul>
+                </ul> 
                             
                 <div class="clear"></div>
             </section>
             </div>
         </div>
         <!-- END MAIN CONTENT -->
-               
-        <!-- FOOTER -->
-        <div id="outerfooter">
-        	<div id="footercontainer">
-            	<footer id="footer"><a href="http://www.huaxia.net/">华夏文化网www.huaxia.net</a></footer>
-            </div>
-        </div>
-        <!-- END FOOTER -->
         
         <div class="clear"></div>
 	</div> <!-- end outercontainer -->
@@ -355,6 +473,7 @@
 
 <!-- Custom Script -->
 <script type="text/javascript" src="../js/custom.js"></script>
+<script src="../js/videophotoview.js"></script>
 
 </body>
 </html>
